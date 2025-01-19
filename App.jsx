@@ -36,7 +36,7 @@ export default function App() {
 
     async function getrepoinfo() {
 
-        url = `https://api.github.com/users/${inputvalue}/repos`;
+        let url = `https://api.github.com/users/${inputvalue}/repos`;
 
         try {
             const response = await fetch(url);
