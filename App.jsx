@@ -137,13 +137,15 @@ export default function App() {
             )}
 
             {
-                repoinfo != 0 && <h1 className="text-3xl mt-14 font-bold">Repositories</h1>
+                repoinfo != 0 && confirmvalue != "error" && <h1 className="text-3xl mt-14 font-bold">Repositories</h1>
             }
 
 
-            <div className="flex flex-row flex-wrap justify-center gap-6 w-2/3">
+            <div className="flex flex-row flex-wrap justify-center gap-x-16 gap-y-6 w-2/3">
                 {
-                    (repoinfo && repoinfo.length > 0) ? (
+                    repoinfo != 0 && confirmvalue != "error" &&
+
+                        (repoinfo && repoinfo.length > 0) ? (
                         repoinfo.map((repo, index) => (
 
                             <Repository
@@ -153,7 +155,7 @@ export default function App() {
                                 stargazers_count={repo.stargazers_count}
                                 forks_count={repo.forks_count}
                                 description={repo.description}
-
+                                inputvalue={inputvalue}
                             />
 
                         )

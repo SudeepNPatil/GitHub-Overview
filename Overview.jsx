@@ -22,7 +22,7 @@ export default function Overview({ collectdata, inputvalue }) {
 
             </div>
 
-            <button className="h-10 w-32 border bg-gray-50 rounded-xl mt-8">Follow</button>
+            <button className="h-10 w-32 shadow-lg border bg-blue-50 rounded-xl mt-8">Follow</button>
 
             <div className="flex flex-row gap-20 mt-10">
 
