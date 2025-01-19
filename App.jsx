@@ -67,7 +67,7 @@ export default function App() {
     const handlekeypress = (e) => {
         if (e.key === 'Enter') {
 
-            url = `https://api.github.com/users/${inputvalue}`
+            let url = `https://api.github.com/users/${inputvalue}`
             fetch(url)
                 .then((Response) => Response.json())
                 .then((Response) => {
