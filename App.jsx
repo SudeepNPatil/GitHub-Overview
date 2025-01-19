@@ -111,7 +111,7 @@ export default function App() {
 
 
     return (
-        <div className=" flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center mb-14">
 
 
             <div className="flex items-center mt-4 gap-2">

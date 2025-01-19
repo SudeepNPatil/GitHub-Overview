@@ -7,9 +7,9 @@ export default function Repository({ name, language, description, forks_count, s
     return (
         <div className="flex flex-row justify-center items-center mt-4">
 
-            <div className="flex flex-row mt-10">
+            <div className="flex flex-row mt-10 overflow-hidden">
 
-                <div className="border-2 rounded-2xl w-[370] h-auto bg-green-50">
+                <div className="rounded-2xl w-[370] h-auto bg-green-50">
                     <div className="flex flex-row gap-5">
                         <RiGitRepositoryLine size={25} className="ml-5 mt-6 opacity-70" /> <span className="mt-5 font-semibold text-lg text-blue-600">{name}</span>
                     </div>
